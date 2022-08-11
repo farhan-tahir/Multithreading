@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dmV-UU-Uws">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cqt-jA-o17">
+            <objects>
+                <viewController id="dmV-UU-Uws" customClass="ViewController" customModule="InterviewTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0D5-h5-bIT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YAx-mI-c2G">
+                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cau-Z7-Cvh">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="246"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iQQ-hH-O9g">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="232"/>
+                                            </imageView>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zt7-50-xaR">
+                                                <rect key="frame" x="0.0" y="242" width="374" height="4"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="giY-SR-0X1">
+                                        <rect key="frame" x="0.0" y="266" width="374" height="246"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FGm-ri-8we">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="232"/>
+                                            </imageView>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8Fw-zM-pNY">
+                                                <rect key="frame" x="0.0" y="242" width="374" height="4"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EuJ-MQ-37b">
+                                        <rect key="frame" x="0.0" y="532" width="374" height="246"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jEU-JM-KFy">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="232"/>
+                                            </imageView>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eoQ-AJ-bTt">
+                                                <rect key="frame" x="0.0" y="242" width="374" height="4"/>
+                                            </progressView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GZn-ZW-GgU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GZn-ZW-GgU" firstAttribute="bottom" secondItem="YAx-mI-c2G" secondAttribute="bottom" constant="20" id="TuB-lC-2y7"/>
+                            <constraint firstItem="YAx-mI-c2G" firstAttribute="leading" secondItem="GZn-ZW-GgU" secondAttribute="leading" constant="20" id="d4r-Hi-4s5"/>
+                            <constraint firstItem="GZn-ZW-GgU" firstAttribute="trailing" secondItem="YAx-mI-c2G" secondAttribute="trailing" constant="20" id="n7M-bp-Eix"/>
+                            <constraint firstItem="YAx-mI-c2G" firstAttribute="top" secondItem="GZn-ZW-GgU" secondAttribute="top" constant="20" id="s0p-4p-Miq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="imageViews" destination="iQQ-hH-O9g" collectionClass="NSMutableArray" id="msm-Y9-3JY"/>
+                        <outletCollection property="imageViews" destination="FGm-ri-8we" collectionClass="NSMutableArray" id="ZuP-kd-wbR"/>
+                        <outletCollection property="imageViews" destination="jEU-JM-KFy" collectionClass="NSMutableArray" id="syz-4g-7ot"/>
+                        <outletCollection property="progressBars" destination="Zt7-50-xaR" collectionClass="NSMutableArray" id="R69-iV-d0S"/>
+                        <outletCollection property="progressBars" destination="8Fw-zM-pNY" collectionClass="NSMutableArray" id="mmD-wW-Mwp"/>
+                        <outletCollection property="progressBars" destination="eoQ-AJ-bTt" collectionClass="NSMutableArray" id="NV2-g6-MyG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="of1-fv-bJd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
